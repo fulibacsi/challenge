@@ -45,11 +45,12 @@ def get_users(db_name):
 
 
 if __name__ == '__main__':
-    create('example.db', './create.sql')
-    import string
-    for char in string.ascii_letters:
-        insert('example.db',
-               'profile',
-               "'email', 'username', 'password'",
-               "'{0}', '{0}', '{0}'".format(char))
-    print(get_users('example.db'))
+    #create('example.db', './create.sql')
+    #import string
+    #for char in string.ascii_letters:
+    #    insert('example.db',
+    #           'profile',
+    #           "'email', 'username', 'password'",
+    #           "'{0}', '{0}', '{0}'".format(char))
+    #print(get_users('example.db'))
+    print (get_users('example.db'))
